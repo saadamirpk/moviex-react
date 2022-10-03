@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useEffect } from "react";
 import Main from "../Components/Main";
 import MovieRow from "../Components/MovieRow";
 import {
@@ -8,6 +8,10 @@ import {
 } from "../Util/Requests";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Moviex";
+  }, []);
+
   return (
     <>
       <Main />

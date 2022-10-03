@@ -1,7 +1,11 @@
-import React from "react";
+import { React, useEffect } from "react";
 import FavMovies from "../Components/FavMovies";
 
 const Account = () => {
+  useEffect(() => {
+    document.title = "My Account";
+  }, []);
+
   return (
     <div className="w-full">
       <img

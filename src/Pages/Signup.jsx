@@ -14,6 +14,10 @@ const Signup = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    document.title = "Sign up";
+  }, []);
+
+  useEffect(() => {
     setError(false);
   }, [email, pass]);
 
